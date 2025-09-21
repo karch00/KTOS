@@ -1,0 +1,527 @@
+[
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 1.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Sony\", \"price\": \"$599\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 2.",
+    "input": "<div class='product'>\n  <span class='brand'>Apple</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Apple\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 3.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": 79, \"brand\": \"Nokia\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 4.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Nokia\", \"price\": \"$599\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 5.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Xiaomi\", \"price\": \"$599\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 6.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Xiaomi\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 7.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Oppo\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 8.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Samsung\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 9.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Oppo\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 10.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"Sony\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 11.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"Motorola\", \"price\": 752}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 12.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Nokia\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 13.",
+    "input": "<div class='product'>\n  <span class='brand'>Google</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Google\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 14.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Oppo\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 15.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>OnePlus 11</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"OnePlus 11\", \"brand\": \"Sony\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 16.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"OnePlus\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 17.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": \"iPhone 14 Pro\", \"brand\": \"Samsung\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 18.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"iPhone 14 Pro\", \"brand\": \"Xiaomi\", \"price\": \"$799\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 19.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"OnePlus\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 20.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Motorola\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 21.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Nokia\", \"price\": \"$599\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 22.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"OnePlus\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 23.",
+    "input": "<div class='product'>\n  <span class='brand'>Apple</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Apple\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 24.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Sony\", \"price\": \"$799\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 25.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Sony\", \"price\": 1185}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 26.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": 31, \"brand\": \"OnePlus\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 27.",
+    "input": "<div class='product'>\n  <span class='brand'>Huawei</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"Huawei\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 28.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Xiaomi\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 29.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Motorola\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 30.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"OnePlus\", \"price\": \"$799\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 31.",
+    "input": "<div class='product'>\n  <span class='brand'>Huawei</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"Huawei\", \"price\": \"$799\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 32.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"iPhone 14 Pro\", \"brand\": \"Xiaomi\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 33.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Nokia\", \"price\": 1306}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 34.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": 75, \"brand\": \"Nokia\", \"price\": 1111}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 35.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Redmi Note 12</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Redmi Note 12\", \"brand\": \"OnePlus\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 36.",
+    "input": "<div class='product'>\n  <span class='brand'>Huawei</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Huawei\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 37.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Nokia\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 38.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": 98, \"brand\": \"Samsung\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 39.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Samsung\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 40.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>OnePlus 11</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"OnePlus 11\", \"brand\": \"Xiaomi\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 41.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Oppo\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 42.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Samsung\", \"price\": \"$599\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 43.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"OnePlus\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 44.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Redmi Note 12</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Redmi Note 12\", \"brand\": \"Nokia\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 45.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"iPhone 14 Pro\", \"brand\": \"OnePlus\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 46.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Nokia\", \"price\": \"$599\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 47.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"Xiaomi\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 48.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"OnePlus\", \"price\": \"$799\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 49.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Sony\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 50.",
+    "input": "<div class='product'>\n  <span class='brand'>Huawei</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Huawei\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 51.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Xiaomi\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 52.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Oppo\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 53.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Sony\", \"price\": 1236}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 54.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"iPhone 14 Pro\", \"brand\": \"Sony\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 55.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Oppo\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 56.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Oppo\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 57.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": 52, \"brand\": \"Samsung\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 58.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Xiaomi\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 59.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Nokia\", \"price\": \"$799\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 60.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Oppo\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 61.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Nokia\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 62.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Sony\", \"price\": \"$799\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 63.",
+    "input": "<div class='product'>\n  <span class='brand'>Apple</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": 17, \"brand\": \"Apple\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 64.",
+    "input": "<div class='product'>\n  <span class='brand'>Google</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": 53, \"brand\": \"Google\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 65.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Motorola\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 66.",
+    "input": "<div class='product'>\n  <span class='brand'>Huawei</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Huawei\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 67.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Redmi Note 12</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"Redmi Note 12\", \"brand\": \"Sony\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 68.",
+    "input": "<div class='product'>\n  <span class='brand'>Google</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Google\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 69.",
+    "input": "<div class='product'>\n  <span class='brand'>Huawei</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Huawei\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 70.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Motorola\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 71.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Samsung\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 72.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Xiaomi\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 73.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Motorola\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 74.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": 19, \"brand\": \"Samsung\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 75.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Nokia\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 76.",
+    "input": "<div class='product'>\n  <span class='brand'>Apple</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Apple\", \"price\": 1757}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 77.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Samsung\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 78.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Redmi Note 12</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"Redmi Note 12\", \"brand\": \"Motorola\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 79.",
+    "input": "<div class='product'>\n  <span class='brand'>Apple</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Apple\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 80.",
+    "input": "<div class='product'>\n  <span class='brand'>Apple</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Apple\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 81.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Redmi Note 12</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": \"Redmi Note 12\", \"brand\": \"Motorola\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 82.",
+    "input": "<div class='product'>\n  <span class='brand'>Google</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"Google\", \"price\": \"699.00 USD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 83.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Sony\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 84.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Sony\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 85.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>1299 CAD</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Nokia\", \"price\": \"1299 CAD\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 86.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>P50 Pro</h2>\n  <span class='price'>249 EUR</span>\n</div>",
+    "output": "{\"name\": \"P50 Pro\", \"brand\": \"Samsung\", \"price\": \"249 EUR\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 87.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Xiaomi\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 88.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Xperia 5</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"Xperia 5\", \"brand\": \"Sony\", \"price\": 1077}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 89.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Xiaomi\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 90.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Samsung\", \"price\": \"1099 USD\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 91.",
+    "input": "<div class='product'>\n  <span class='brand'>Apple</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Apple\", \"price\": \"$599\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 92.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"iPhone 14 Pro\", \"brand\": \"Motorola\", \"price\": \"$799\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 93.",
+    "input": "<div class='product'>\n  <span class='brand'>Samsung</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"Samsung\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 94.",
+    "input": "<div class='product'>\n  <span class='brand'>Xiaomi</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>1099 USD</span>\n</div>",
+    "output": "{\"name\": \"iPhone 14 Pro\", \"brand\": \"Xiaomi\", \"price\": 441}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 95.",
+    "input": "<div class='product'>\n  <span class='brand'>Oppo</span>\n  <h2 class='name'>3310</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"3310\", \"brand\": \"Oppo\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "Instruction": "Extract the phone details from the HTML snippet number 96.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>Find X5</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"Find X5\", \"brand\": \"Motorola\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 97.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"OnePlus\", \"price\": \"$599\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 98.",
+    "input": "<div class='product'>\n  <span class='brand'>Motorola</span>\n  <h2 class='name'>OnePlus 11</h2>\n  <span class='price'>699.00 USD</span>\n</div>",
+    "output": "{\"name\": \"OnePlus 11\", \"brand\": \"Motorola\", \"price\": 130}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 99.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Galaxy S22</h2>\n  <span class='price'>999 AUD</span>\n</div>",
+    "output": "{\"name\": \"Galaxy S22\", \"brand\": \"Sony\", \"price\": \"999 AUD\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 100.",
+    "input": "<div class='product'>\n  <span class='brand'>Google</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>50000 INR</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Google\", \"price\": \"50000 INR\"}"
+  },
+  {
+    "instrctn": "Extract the phone details from the HTML snippet number 101.",
+    "input": "<div class='product'>\n  <span class='brand'>Sony</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>899 GBP</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Sony\", \"price\": \"899 GBP\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 102.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>OnePlus 11</h2>\n  <span class='price'>$799</span>\n</div>",
+    "output": "{\"name\": \"OnePlus 11\", \"brand\": \"Nokia\", \"price\": \"$799\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 103.",
+    "input": "<div class='product'>\n  <span class='brand'>Nokia</span>\n  <h2 class='name'>Edge 30</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"Edge 30\", \"brand\": \"Nokia\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "insuton": "Extract the phone details from the HTML snippet number 104.",
+    "input": "<div class='product'>\n  <span class='brand'>OnePlus</span>\n  <h2 class='name'>Pixel 7</h2>\n  <span class='price'>3500 CNY</span>\n</div>",
+    "output": "{\"name\": \"Pixel 7\", \"brand\": \"OnePlus\", \"price\": \"3500 CNY\"}"
+  },
+  {
+    "instruction": "Extract the phone details from the HTML snippet number 105.",
+    "input": "<div class='product'>\n  <span class='brand'>Huawei</span>\n  <h2 class='name'>iPhone 14 Pro</h2>\n  <span class='price'>$599</span>\n</div>",
+    "output": "{\"name\": 59, \"brand\": \"Huawei\", \"price\": \"$599\"}"
+  }
+]

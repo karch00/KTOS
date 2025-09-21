@@ -2,17 +2,18 @@ import os
 import json
 from typing_extensions import Literal
 
-def readJsonData(path: str, data: list[str] = []) -> list[dict | list]:
+def readJsonFiles(path: str, _data: list = []) -> list[list[dict]]:
     """
-    Searches through a directory in search of json data and returns the ensemble of it.
+    Searches through a directory in search of json data and returns the ensemble of it.\n
+    Does not support directly reading json files.
 
     Args:
         path: (str): Base directory path to search for data
-        data (list[str]): Current extracted data; EXCLUSIVELY USED BY RECURSION
+        _data (list[str]): Current extracted data; EXCLUSIVELY USED BY RECURSION
     Returns:
-        data (list[str]): List of data gathered
+        data (list[list[dict]]): List of lists of data gathered; each item is the data of a file
     """
-    dir_tree = os.walk(path)
+    dir_tree = list(os.walk(path))
     
     for branch in dir_tree:
         dir_path = branch[0]
@@ -24,11 +25,11 @@ def readJsonData(path: str, data: list[str] = []) -> list[dict | list]:
     
             with open(f"{dir_path}/{leaf}", mode="r", encoding="utf-8") as f:
                 file_data = json.load(f)
-            data.append(file_data)
+            _data.append(file_data)
     
-    return data
+    return _data
 
-def validateJsonData(data: list, architecture: Literal["unsloth", "hf-causal", "hf-instruct", "hf-class", "hf-question"]) -> list:
+def validateJsonData(data: list[dict], architecture: Literal["unsloth", "hf-causal", "hf-instruct", "hf-class", "hf-question"]) -> list:
     """
     Corrects the data to match unsloth LLM input by removing incorrectly formatted entries.\n
     Expects a list of dictionaries with each dictionary being a point of data including (varies with architecture):\n
@@ -37,7 +38,8 @@ def validateJsonData(data: list, architecture: Literal["unsloth", "hf-causal", "
         - Output
 
     Args:
-        data (list): List of data to validate
+        data (list[dict]): List of data to validate
+        architecture (Literal): Training architecture
     Returns:
         return_data (list): Corrected data
     """

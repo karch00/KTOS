@@ -1,6 +1,7 @@
 import torch
 from unsloth import FastLanguageModel
 from datasets import Dataset
+from file_tools import *
 
 def checkGPU() -> bool:
     """
@@ -13,7 +14,7 @@ def checkGPU() -> bool:
     print(f"CUDA available: {cuda_available}\nGPU: {card}")
     return cuda_available
 
-class UnslothTuning():
+class UnslothTuning:
     """
     Unsloth tuning functions
     """
@@ -38,7 +39,7 @@ class UnslothTuning():
             print(\
     f"""
     [WARNING]----------------------------------------------[WARNING]
-    [WARNING] GPU memory usage set to {gpu_memory_utilization*100}                 [WARNING]
+    [WARNING] GPU memory usage set to {gpu_memory_utilization*100}%                [WARNING]
     [WARNING] This may lead to unstability or even crashes [WARNING]
     [WARNING] Press any button to dismiss                  [WARNING]
     [WARNING]----------------------------------------------[WARNING]
@@ -55,5 +56,27 @@ class UnslothTuning():
 
         return model, tokenizer
 
+    def __formatPrompt(data: dict[str]) -> str:
+        """
+        Formats data into unsloth prompt.
+        Args:
+            data (dict[str]): Data entry dicitonary
+        Returns:
+            str (str): Formatted prompt
+        """
+        return f"### Input: {data["input"]}\n### Output: {data["output"]}<|endoftext|>"
     def preprocessData(data_path: str):
-        raise NotImplementedError()
+        """
+        Preprocess data to feed it to the model
+
+        Args:
+            data_path (str): Path to look for json data
+        Returns:
+            dataset (Dataset): Formatted data Dataset
+        """
+
+        data = readJsonFiles(path=data_path)
+        validated_data = validateJsonData(data=data, architecture="unsloth")
+        formatted_data = [UnslothTuning.__formatPrompt(prompt) for prompt in validated_data]
+
+        return Dataset.from_dict({"text": formatted_data})
